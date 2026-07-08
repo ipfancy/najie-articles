@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mili Law Firm — Comprehensive Legal Services · IP Specialists</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#8B1A1A;--accent:#C0A060;--dark:#1a1a2e;--text:#333;--text-light:#666;--bg-light:#F5F5F0;--white:#fff;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--text);line-height:1.7}
+#navbar{position:fixed;top:0;width:100%;z-index:1000;padding:16px 24px;display:flex;justify-content:space-between;align-items:center;background:rgba(139,26,26,0.95);backdrop-filter:blur(10px)}
+#navbar .logo{color:var(--white);font-size:20px;font-weight:700}
+#navbar .logo span{color:var(--accent)}
+.lang-switch{display:flex;gap:4px}
+.lang-switch a{padding:4px 10px;border-radius:4px;font-size:12px;text-decoration:none;color:rgba(255,255,255,0.6)}
+.lang-switch a.active{background:rgba(255,255,255,0.15);color:var(--white)}
+.hero{min-height:85vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#1a1a2e 0%,#8B1A1A 40%,#5C1010 100%);color:var(--white);text-align:center;padding:120px 24px 60px}
+.hero h1{font-size:44px;font-weight:900;margin-bottom:12px}
+.hero h1 span{color:var(--accent)}
+.hero .subtitle{font-size:18px;opacity:0.85;max-width:700px;margin:16px auto 32px;line-height:1.8}
+.hero .btn{padding:14px 36px;background:var(--accent);color:var(--dark);border-radius:30px;text-decoration:none;font-weight:600;display:inline-block}
+section{padding:80px 24px}
+.container{max-width:1100px;margin:0 auto}
+.section-title{font-size:28px;font-weight:700;text-align:center;margin-bottom:8px}
+.section-title span{color:var(--primary)}
+.section-subtitle{text-align:center;color:var(--text-light);font-size:15px;margin-bottom:40px}
+.practice-tabs{display:flex;justify-content:center;margin-bottom:40px;background:var(--bg-light);border-radius:30px;padding:4px;max-width:400px;margin:0 auto 40px}
+.practice-tab{flex:1;padding:10px 20px;text-align:center;border-radius:26px;cursor:pointer;font-size:13px;font-weight:500;border:none;background:transparent;color:var(--text-light);transition:0.3s}
+.practice-tab.active{background:var(--primary);color:var(--white)}
+.practice-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.practice-grid.hidden{display:none}
+.practice-card{background:var(--bg-light);border-radius:12px;padding:24px;border-left:3px solid var(--primary);transition:0.3s}
+.practice-card.general{border-left-color:var(--accent)}
+.practice-card h3{font-size:16px;font-weight:600;margin-bottom:6px}
+.practice-card p{font-size:13px;color:var(--text-light)}
+.ip-highlight{background:linear-gradient(135deg,#8B1A1A,#5C1010);color:var(--white);text-align:center;padding:60px 24px}
+.ip-highlight .stats{display:flex;gap:40px;justify-content:center;margin-top:28px;flex-wrap:wrap}
+.ip-highlight .stats .num{font-size:32px;font-weight:900;color:var(--accent)}
+.ip-highlight .stats .lbl{font-size:13px;opacity:0.7}
+.about-section{background:var(--bg-light)}
+.about-content{max-width:800px;margin:0 auto;font-size:15px;line-height:2.2;color:var(--text-light)}
+.article-card{background:var(--bg-light);border-radius:12px;padding:24px;margin-bottom:14px;transition:0.3s}
+.article-card .date{color:var(--primary);font-size:13px;font-weight:500}
+.article-card h3 a{color:var(--text);text-decoration:none;font-size:16px}
+.contact-section{background:var(--dark);color:var(--white);text-align:center}
+.contact-section .btn{display:inline-block;padding:14px 36px;background:var(--accent);color:var(--dark);border-radius:30px;text-decoration:none;font-weight:600;margin-top:20px}
+footer{background:#111;text-align:center;padding:40px 24px;font-size:13px;color:rgba(255,255,255,0.5)}
+</style>
+</head>
+<body>
+<nav id="navbar">
+  <div class="logo">Mili<span> Law</span></div>
+  <div class="lang-switch">
+    <a href="/觅理官网.html">中文</a>
+    <a href="/en/mili-law-firm.html" class="active">EN</a>
+    <a href="/fr/mili-law-firm.html">FR</a>
+  </div>
+</nav>
+<section class="hero">
+  <div>
+    <h1>Mili <span>Law Firm</span></h1>
+    <p class="subtitle">Comprehensive legal services in China, with Intellectual Property as our core strength.<br>Patent litigation · Trademark · Cross-border IP · Corporate counsel</p>
+    <a href="mailto:ziganghe@outlook.com" class="btn">Contact Us</a>
+  </div>
+</section>
+<section><div class="container">
+  <h2 class="section-title">Practice <span>Areas</span></h2>
+  <p class="section-subtitle">Comprehensive legal coverage · IP as core advantage</p>
+  <div class="practice-tabs">
+    <button class="practice-tab active" onclick="st('all')">All</button>
+    <button class="practice-tab" onclick="st('general')">General Law</button>
+    <button class="practice-tab" onclick="st('ip')">IP</button>
+  </div>
+  <div id="gIp" class="practice-grid">
+    <div class="practice-card"><h3>Patent Litigation & Invalidity</h3><p>Patent infringement lawsuits, invalidation proceedings, administrative litigation across mechanical, electrical, chemical, and biopharma fields.</p></div>
+    <div class="practice-card"><h3>Trademark & Unfair Competition</h3><p>Trademark infringement, opposition, well-known mark protection; anti-unfair competition litigation.</p></div>
+    <div class="practice-card"><h3>Cross-Border IP</h3><p>Cross-border patent infringement, Section 337, international licensing — 862 partners in 61 countries.</p></div>
+    <div class="practice-card"><h3>Copyright & Software</h3><p>Software copyright, AI-generated content, digital protection, open-source compliance.</p></div>
+    <div class="practice-card"><h3>Trade Secrets & Non-Compete</h3><p>Trade secret litigation, confidentiality systems, non-compete agreements.</p></div>
+    <div class="practice-card"><h3>AI & Emerging Tech Law</h3><p>Algorithm compliance, data protection, AI training rights, blockchain advisory.</p></div>
+  </div>
+  <div id="gGen" class="practice-grid hidden">
+    <div class="practice-card general"><h3>Corporate Counsel</h3><p>Retainer counsel, contract review, governance, M&A due diligence, compliance.</p></div>
+    <div class="practice-card general"><h3>Civil & Commercial Litigation</h3><p>Contract disputes, debt recovery, property disputes, commercial arbitration.</p></div>
+    <div class="practice-card general"><h3>Labor & Employment</h3><p>Employment disputes, work injury, collective bargaining, compliance audits.</p></div>
+    <div class="practice-card general"><h3>Real Estate & Construction</h3><p>Property disputes, lease contracts, construction disputes.</p></div>
+    <div class="practice-card general"><h3>Family & Inheritance</h3><p>Divorce, custody, inheritance disputes, family property agreements.</p></div>
+    <div class="practice-card general"><h3>Criminal Defense & Compliance</h3><p>Economic crime defense, IP crimes, corporate compliance.</p></div>
+  </div>
+</div></section>
+<section class="ip-highlight"><div class="container">
+  <h2 style="font-size:28px;margin-bottom:16px;">IP at the Core</h2>
+  <p style="opacity:0.85;font-size:15px;line-height:1.8;max-width:700px;margin:0 auto;">Founded by attorney <strong>He Zigang</strong> with <strong>20 years of IP practice</strong>. Thousands of IP cases across patents, trademarks, copyrights, and trade secrets. A global network spanning <strong>61 countries</strong> — <strong>862 partner firms</strong>.</p>
+  <div class="stats"><div><div class="num">3,000+</div><div class="lbl">IP Cases</div></div><div><div class="num">61</div><div class="lbl">Countries</div></div><div><div class="num">862</div><div class="lbl">Partners</div></div></div>
+</div></section>
+<section class="about-section"><div class="container">
+  <h2 class="section-title">About <span>Mili</span></h2>
+  <div class="about-content"><p>Mili Law Firm is a <strong>comprehensive legal service provider</strong> founded by veteran attorney <strong>He Zigang</strong>. While offering full-spectrum legal services, Mili's <strong>core strength is intellectual property</strong> — patent litigation, trademark disputes, copyright, trade secrets, anti-unfair competition, and cross-border IP.</p><p style="margin-top:16px;">Synergy with <strong>Aipunajie Patent Agency</strong> and <strong>Najie</strong> forms a complete "Prosecution → Litigation → Management" chain.</p></div>
+</div></section>
+<section class="contact-section"><div class="container">
+  <h2 style="font-size:28px;margin-bottom:12px;">Contact Us</h2>
+  <p style="opacity:0.8;">Comprehensive legal counsel or specialized IP litigation — Mili is here to help.</p>
+  <a href="mailto:ziganghe@outlook.com" class="btn">ziganghe@outlook.com</a>
+</div></section>
+<footer><div style="font-size:18px;font-weight:700;margin-bottom:8px;opacity:0.8;">Mili Law Firm</div><div style="color:var(--accent);margin-bottom:8px;">He Zigang | Attorney at Law</div><p>Comprehensive Legal Services · IP Core Advantage</p></footer>
+<button id="bt" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="position:fixed;bottom:30px;right:30px;width:44px;height:44px;border-radius:50%;background:var(--primary);color:white;border:none;cursor:pointer;display:none;font-size:18px;">↑</button>
+<script>
+window.addEventListener('scroll',()=>{document.getElementById('bt').style.display=window.scrollY>100?'block':'none'});
+function st(t){
+  document.querySelectorAll('.practice-tab').forEach(x=>x.classList.remove('active'));
+  document.getElementById('gIp').classList.add('hidden');
+  document.getElementById('gGen').classList.add('hidden');
+  if(t==='all'){document.getElementById('gIp').classList.remove('hidden');document.getElementById('gGen').classList.remove('hidden');document.querySelectorAll('.practice-tab')[0].classList.add('active');}
+  else if(t==='ip'){document.getElementById('gIp').classList.remove('hidden');document.querySelectorAll('.practice-tab')[2].classList.add('active');}
+  else{document.getElementById('gGen').classList.remove('hidden');document.querySelectorAll('.practice-tab')[1].classList.add('active');}
+}
+</script>
+</body>
+</html>

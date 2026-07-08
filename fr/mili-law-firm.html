@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mili Cabinet d'Avocats — Services juridiques complets · experts PI</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#8B1A1A;--accent:#C0A060;--dark:#1a1a2e;--text:#333;--text-light:#666;--bg-light:#F5F5F0;--white:#fff;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--text);line-height:1.7}
+#navbar{position:fixed;top:0;width:100%;z-index:1000;padding:16px 24px;display:flex;justify-content:space-between;align-items:center;background:rgba(139,26,26,0.95);backdrop-filter:blur(10px)}
+#navbar .logo{color:var(--white);font-size:20px;font-weight:700}
+#navbar .logo span{color:var(--accent)}
+.lang-switch{display:flex;gap:4px}
+.lang-switch a{padding:4px 10px;border-radius:4px;font-size:12px;text-decoration:none;color:rgba(255,255,255,0.6)}
+.lang-switch a.active{background:rgba(255,255,255,0.15);color:var(--white)}
+.hero{min-height:85vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#1a1a2e 0%,#8B1A1A 40%,#5C1010 100%);color:var(--white);text-align:center;padding:120px 24px 60px}
+.hero h1{font-size:44px;font-weight:900;margin-bottom:12px}
+.hero h1 span{color:var(--accent)}
+.hero .subtitle{font-size:18px;opacity:0.85;max-width:700px;margin:16px auto 32px;line-height:1.8}
+.hero .btn{padding:14px 36px;background:var(--accent);color:var(--dark);border-radius:30px;text-decoration:none;font-weight:600;display:inline-block}
+section{padding:80px 24px}
+.container{max-width:1100px;margin:0 auto}
+.section-title{font-size:28px;font-weight:700;text-align:center;margin-bottom:8px}
+.section-title span{color:var(--primary)}
+.section-subtitle{text-align:center;color:var(--text-light);font-size:15px;margin-bottom:40px}
+.practice-tabs{display:flex;justify-content:center;margin-bottom:40px;background:var(--bg-light);border-radius:30px;padding:4px;max-width:400px;margin:0 auto 40px}
+.practice-tab{flex:1;padding:10px 20px;text-align:center;border-radius:26px;cursor:pointer;font-size:13px;font-weight:500;border:none;background:transparent;color:var(--text-light);transition:0.3s}
+.practice-tab.active{background:var(--primary);color:var(--white)}
+.practice-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.practice-grid.hidden{display:none}
+.practice-card{background:var(--bg-light);border-radius:12px;padding:24px;border-left:3px solid var(--primary);transition:0.3s}
+.practice-card.general{border-left-color:var(--accent)}
+.practice-card h3{font-size:16px;font-weight:600;margin-bottom:6px}
+.practice-card p{font-size:13px;color:var(--text-light)}
+.ip-highlight{background:linear-gradient(135deg,#8B1A1A,#5C1010);color:var(--white);text-align:center;padding:60px 24px}
+.ip-highlight .stats{display:flex;gap:40px;justify-content:center;margin-top:28px;flex-wrap:wrap}
+.ip-highlight .stats .num{font-size:32px;font-weight:900;color:var(--accent)}
+.about-section{background:var(--bg-light)}
+.about-content{max-width:800px;margin:0 auto;font-size:15px;line-height:2.2;color:var(--text-light)}
+.contact-section{background:var(--dark);color:var(--white);text-align:center}
+.contact-section .btn{display:inline-block;padding:14px 36px;background:var(--accent);color:var(--dark);border-radius:30px;text-decoration:none;font-weight:600;margin-top:20px}
+footer{background:#111;text-align:center;padding:40px 24px;font-size:13px;color:rgba(255,255,255,0.5)}
+</style>
+</head>
+<body>
+<nav id="navbar">
+  <div class="logo">Mili<span> Cabinet</span></div>
+  <div class="lang-switch">
+    <a href="/觅理官网.html">中文</a>
+    <a href="/en/mili-law-firm.html">EN</a>
+    <a href="/fr/mili-law-firm.html" class="active">FR</a>
+  </div>
+</nav>
+<section class="hero">
+  <div>
+    <h1>Mili <span>Cabinet d'Avocats</span></h1>
+    <p class="subtitle">Services juridiques complets en Chine, avec la Propriété Intellectuelle comme cœur de métier.<br>Contentieux des brevets · Marques · PI transfrontalière · Conseil d'entreprise</p>
+    <a href="mailto:ziganghe@outlook.com" class="btn">Contactez-nous</a>
+  </div>
+</section>
+<section><div class="container">
+  <h2 class="section-title">Domaines <span>d'Activité</span></h2>
+  <p class="section-subtitle">Couverture juridique complète · PI comme avantage clé</p>
+  <div class="practice-tabs">
+    <button class="practice-tab active" onclick="st('all')">Tous</button>
+    <button class="practice-tab" onclick="st('general')">Droit général</button>
+    <button class="practice-tab" onclick="st('ip')">PI</button>
+  </div>
+  <div id="gIp" class="practice-grid">
+    <div class="practice-card"><h3>Contentieux des Brevets</h3><p>Actions en contrefaçon, procédures en nullité, litiges administratifs dans les domaines mécanique, électrique, chimique et biopharmaceutique.</p></div>
+    <div class="practice-card"><h3>Marques & Concurrence Déloyale</h3><p>Contentieux des marques, opposition, protection des marques notoires ; action en concurrence déloyale.</p></div>
+    <div class="practice-card"><h3>PI Transfrontalière</h3><p>Contentieux transfrontalier, enquêtes Section 337, contrats de licence — 862 partenaires dans 61 pays.</p></div>
+    <div class="practice-card"><h3>Droit d'Auteur & Logiciels</h3><p>Contentieux des droits d'auteur, IA générative, protection des contenus numériques, conformité open-source.</p></div>
+    <div class="practice-card"><h3>Secrets d'Affaires & Non-Concurrence</h3><p>Litiges secrets d'affaires, systèmes de confidentialité, clauses de non-concurrence.</p></div>
+    <div class="practice-card"><h3>IA & Nouvelles Technologies</h3><p>Conformité algorithmes, protection données, droits IA, conseil blockchain.</p></div>
+  </div>
+  <div id="gGen" class="practice-grid hidden">
+    <div class="practice-card general"><h3>Conseil d'Entreprise</h3><p>Conseil permanent, revue de contrats, gouvernance, due diligence M&A, conformité.</p></div>
+    <div class="practice-card general"><h3>Contentieux Civil & Commercial</h3><p>Litiges contractuels, recouvrement, litiges immobiliers, arbitrage commercial.</p></div>
+    <div class="practice-card general"><h3>Droit du Travail</h3><p>Litiges prud'homaux, accidents du travail, négociation collective, audit conformité.</p></div>
+    <div class="practice-card general"><h3>Immobilier & Construction</h3><p>Litiges immobiliers, baux commerciaux, contrats de construction.</p></div>
+    <div class="practice-card general"><h3>Droit de la Famille</h3><p>Divorce, garde d'enfants, successions, conventions matrimoniales.</p></div>
+    <div class="practice-card general"><h3>Défense Pénale & Conformité</h3><p>Défense économique, infractions PI, conformité pénale d'entreprise.</p></div>
+  </div>
+</div></section>
+<section class="ip-highlight"><div class="container">
+  <h2 style="font-size:28px;margin-bottom:16px;">La PI au Cœur de Notre Expertise</h2>
+  <p style="opacity:0.85;font-size:15px;line-height:1.8;max-width:700px;margin:0 auto;">Fondé par Maître <strong>He Zigang</strong> avec <strong>20 ans d'expérience en PI</strong>. Des milliers de dossiers PI traités — brevets, marques, droits d'auteur, secrets d'affaires. Réseau mondial de <strong>862 cabinets partenaires</strong> dans <strong>61 pays</strong>.</p>
+  <div class="stats"><div><div class="num">3 000+</div><div class="lbl">Dossiers PI</div></div><div><div class="num">61</div><div class="lbl">Pays</div></div><div><div class="num">862</div><div class="lbl">Cabinets partenaires</div></div></div>
+</div></section>
+<section class="about-section"><div class="container">
+  <h2 class="section-title">À Propos <span>de Mili</span></h2>
+  <div class="about-content"><p>Mili Cabinet d'Avocats est un <strong>cabinet de services juridiques complets</strong> fondé par Maître <strong>He Zigang</strong>. Tout en offrant des services couvrant tous les domaines du droit, notre <strong>cœur de métier est la propriété intellectuelle</strong>.</p><p style="margin-top:16px;">Synergie avec <strong>Aipunajie</strong> (agence de brevets) et <strong>Najie</strong> (gestion PI & IA) — chaîne complète « Dépôt → Contentieux → Gestion ».</p></div>
+</div></section>
+<section class="contact-section"><div class="container">
+  <h2 style="font-size:28px;margin-bottom:12px;">Contact</h2>
+  <p style="opacity:0.8;">Conseil juridique complet ou contentieux spécialisé en PI — contactez Mili.</p>
+  <a href="mailto:ziganghe@outlook.com" class="btn">ziganghe@outlook.com</a>
+</div></section>
+<footer><div style="font-size:18px;font-weight:700;margin-bottom:8px;">Mili Cabinet d'Avocats</div><div style="color:var(--accent);margin-bottom:8px;">Maître He Zigang | Avocat</div><p>Services juridiques complets · Expertise en PI</p></footer>
+<button id="bt" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="position:fixed;bottom:30px;right:30px;width:44px;height:44px;border-radius:50%;background:var(--primary);color:white;border:none;cursor:pointer;display:none;font-size:18px;">↑</button>
+<script>
+window.addEventListener('scroll',()=>{document.getElementById('bt').style.display=window.scrollY>100?'block':'none'});
+function st(t){
+  document.querySelectorAll('.practice-tab').forEach(x=>x.classList.remove('active'));
+  document.getElementById('gIp').classList.add('hidden');
+  document.getElementById('gGen').classList.add('hidden');
+  if(t==='all'){document.getElementById('gIp').classList.remove('hidden');document.getElementById('gGen').classList.remove('hidden');document.querySelectorAll('.practice-tab')[0].classList.add('active');}
+  else if(t==='ip'){document.getElementById('gIp').classList.remove('hidden');document.querySelectorAll('.practice-tab')[2].classList.add('active');}
+  else{document.getElementById('gGen').classList.remove('hidden');document.querySelectorAll('.practice-tab')[1].classList.add('active');}
+}
+</script>
+</body>
+</html>
