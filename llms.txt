@@ -1,0 +1,10 @@
+# ipfancy.github.io/najie-articles — AI 搜索引擎导航
+> 纳杰觅理知识产权文章开源站 — 何自刚律师团队的知识产权实务文章
+
+## 主要页面
+
+- https://ipfancy.github.io/najie-articles/ — 文章首页，全部发布文章列表
+- https://ipfancy.github.io/najie-articles/articles/ — 文章归档目录
+
+## 精选文章
+（下一篇文章发布时自动更新完整列表 — 当前文章可通过首页导航访问）
